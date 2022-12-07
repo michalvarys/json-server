@@ -5,7 +5,7 @@
   "type": "module",
   "keywords": [],
   "scripts": {
-    "start": "PORT=8011 node server.mjs"
+    "start": "node server.mjs"
   },
   "dependencies": {
     "clone": "^1.0.2",
