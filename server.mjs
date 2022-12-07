@@ -21,8 +21,9 @@ server.use(jsonServer.bodyParser);
 server.use(`${prefix}/api`, middlewares);
 server.use(`${prefix}/api`, router);
 
-server.listen(process.env.PORT || 8080, () => {
-  console.log("JSON Server is running");
+const port = process.env.PORT || 8080;
+server.listen(port, () => {
+  console.log(`JSON Server is running on port ${port}`);
 });
 
 export default server;
